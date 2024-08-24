@@ -22,29 +22,29 @@ export default function Navbar() {
       </div>
 
       {/* Menu items */}
-      <ul className={`flex-col lg:flex-row flex lg:space-x-8 space-y-4 lg:space-y-0 lg:items-center lg:static absolute top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent z-10 transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-y-0' : '-translate-y-full lg:translate-y-0'}`}>
+      <ul className={`flex-col lg:flex-row flex lg:space-x-8 space-y-4 lg:space-y-0 lg:items-center lg:static absolute top-full left-0 w-full lg:w-auto  lg:bg-transparent z-10 transition-transform duration-300 ease-in-out transform ${menuOpen ? 'translate-y-0' : '-translate-y-full lg:translate-y-0'}`}>
         <li className="text-center lg:text-left">
-          <Link href="#home">
+          <Link href="/">
             <p className="hover:text-orange-500">Home</p>
           </Link>
         </li>
         <li className="text-center lg:text-left">
-          <Link href="#about">
+          <Link href="/about">
             <p className="hover:text-orange-400">About</p>
           </Link>
         </li>
         <li className="text-center lg:text-left">
-          <Link href="#service">
+          <Link href="/service">
             <p className="hover:text-orange-400">Service</p>
           </Link>
         </li>
         <li className="text-center lg:text-left">
-          <Link href="#works">
+          <Link href="/works">
             <p className="hover:text-orange-400">Works</p>
           </Link>
         </li>
         <li className="text-center lg:text-left">
-          <Link href="#contact">
+          <Link href="/contact">
             <p className="hover:text-orange-400">Contact</p>
           </Link>
         </li>
