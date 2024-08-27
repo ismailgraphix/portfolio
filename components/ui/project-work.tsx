@@ -21,7 +21,7 @@ type ProjectItemProps = {
 const ProjectItem: React.FC<ProjectItemProps> = ({ title, category, image, slug }) => {
   return (
     <Link href={`/projects/${slug}`} passHref>
-      <div className="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900 text-white transform transition-transform hover:scale-105 cursor-pointer">
+      <div className="rounded-lg overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transform transition-transform hover:scale-105 cursor-pointer">
         <Image src={image} alt={title} className="w-full h-48 object-cover" />
         <div className="p-4">
           <h3 className="text-lg font-bold">{title}</h3>
@@ -38,10 +38,10 @@ export default function Projects() {
   const filteredProjects = filter === 'All' ? portfolioData : portfolioData.filter(project => project.category === filter);
 
   return (
-    <section className="py-12 bg-gray-900 dark:bg-gray-900 text-white">
+    <section className="py-12 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-6 text-center">Works & Projects</h2>
-        <p className="text-center text-gray-400 mb-8">
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
           Check out some of my design projects, meticulously crafted with love and dedication, each one reflecting the passion and soul I poured into every detail.
         </p>
 
@@ -49,7 +49,7 @@ export default function Projects() {
           {['All', 'Fullstack', 'Frontend', 'Research'].map(category => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full ${filter === category ? 'bg-orange-500' : 'bg-gray-700 hover:bg-gray-600'}`}
+              className={`px-4 py-2 rounded-full ${filter === category ? 'bg-orange-500 text-white' : 'bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-600'}`}
               onClick={() => setFilter(category as 'All' | 'Fullstack' | 'Frontend' | 'Research')}
             >
               {category}

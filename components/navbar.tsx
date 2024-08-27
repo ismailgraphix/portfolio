@@ -62,7 +62,7 @@ export default function Navbar() {
       {/* Mode toggle and hire me button for desktop */}
       <div className="hidden lg:flex items-center space-x-4">
         <ModeToggle />
-        <button className="bg-transparent border py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-orange-400">
+        <button className="bg-transparent border py-2 px-4 rounded-full flex items-center space-x-2 hover:bg-orange-600">
           <span>Hire Me</span>
           <FaHandshake />
         </button>

@@ -14,12 +14,14 @@ export const portfolioData = [
     category: 'Fullstack',
     image: profile01,
     slug: 'mobile-application-design',
+    description: "going up and down"
   },
   {
     title: 'Brand Identity and Motion Design',
     category: 'Frontend',
     image: profile,
     slug: 'mobile-application-design',
+    description: "writing"
   },
   // Add more projects here
 ];

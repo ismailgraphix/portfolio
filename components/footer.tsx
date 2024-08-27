@@ -16,7 +16,7 @@ export default function Footer() {
           Reach out and let&apos;s make it happen. ✨ I&apos;m also available for full-time or part-time opportunities to push the boundaries of design and deliver exceptional work.
         </p>
         <Link href={'/contact'}>   
-        <button className="bg-orange-500 hover:bg-orange-600 text-white py-2 px-6 rounded-full">
+        <button className="bg-orange-500 hover:bg-slate-600 text-white py-2 px-6 rounded-full">
           Let&apos;s Talk
         </button>
         </Link>
