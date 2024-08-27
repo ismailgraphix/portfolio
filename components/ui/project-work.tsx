@@ -1,29 +1,34 @@
 "use client";
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
+import Link from 'next/link';
 import { portfolioData } from '../../assets/data/portfolioData'; // Adjust the path according to your file structure
 
 type Project = {
   title: string;
   category: 'All' | 'Fullstack' | 'Frontend' | 'Research';
   image: StaticImageData;
+  slug: string; // Add a slug or id for routing to the project details page
 };
 
 type ProjectItemProps = {
   title: string;
   category: string;
   image: StaticImageData;
+  slug: string; // Include the slug as a prop
 };
 
-const ProjectItem: React.FC<ProjectItemProps> = ({ title, category, image }) => {
+const ProjectItem: React.FC<ProjectItemProps> = ({ title, category, image, slug }) => {
   return (
-    <div className="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900 text-white">
-      <Image src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-4">
-        <h3 className="text-lg font-bold">{title}</h3>
-        <p className="text-sm">{category}</p>
+    <Link href={`/projects/${slug}`} passHref>
+      <div className="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900 text-white transform transition-transform hover:scale-105 cursor-pointer">
+        <Image src={image} alt={title} className="w-full h-48 object-cover" />
+        <div className="p-4">
+          <h3 className="text-lg font-bold">{title}</h3>
+          <p className="text-sm">{category}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -54,7 +59,7 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
-            <ProjectItem key={index} title={project.title} category={project.category} image={project.image} />
+            <ProjectItem key={index} title={project.title} category={project.category} image={project.image} slug={project.slug} />
           ))}
         </div>
       </div>

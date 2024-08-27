@@ -39,7 +39,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li className="text-center lg:text-left">
-          <Link href="/works">
+          <Link href="/projects">
             <p className="hover:text-orange-400">Works</p>
           </Link>
         </li>

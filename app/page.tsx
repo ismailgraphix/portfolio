@@ -36,7 +36,7 @@ export default function Profile() {
           <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 mb-6 h-full flex flex-col justify-between">
             <div>
               <p className="text-orange-500 dark:text-orange-400 mb-2">Hello There!</p>
-              <h1 className="text-3xl font-bold mb-4">
+              <h1  className="text-3xl font-bold mb-4">
                 I&apos;m Ismail Muhammad Adam, a product designer crafting user-centric design with pixel-perfect precision.
                 a product designer crafting user-centric design with pixel-perfect precision.
                 a product designer crafting user-centric design with pixel-perfect precision.
@@ -57,15 +57,18 @@ export default function Profile() {
           </div>
 
           {/* Company Logos Section */}
-          <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 flex flex-col justify-between">
-            <h3 className="text-xl mb-4">Companies I&apos;ve Worked With</h3>
-            <div className="flex flex-wrap justify-between items-center">
-              <Image src={clientlogo} alt="Google" className="w-28 mb-4" />
-              <Image src={clientlogo} alt="Slack" className="w-28 mb-4" />
-              <Image src={clientlogo} alt="Amazon" className="w-28 mb-4" />
-              <Image src={clientlogo} alt="Walmart" className="w-28 mb-4" />
-            </div>
-          </div>
+          <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6">
+      <h3 className="text-xl mb-4">Companies I&apos;ve Worked With</h3>
+      <div className="marquee-container overflow-hidden whitespace-nowrap">
+        <div className="marquee flex items-center space-x-12 animate-marquee">
+          <Image src={clientlogo} alt="Google" className="w-28" />
+          <Image src={clientlogo} alt="Slack" className="w-28" />
+          <Image src={clientlogo} alt="Amazon" className="w-28" />
+          <Image src={clientlogo} alt="Walmart" className="w-28" />
+          {/* Add more logos if needed */}
+        </div>
+      </div>
+    </div>
         </div>
       </div>
       <Projects/>
