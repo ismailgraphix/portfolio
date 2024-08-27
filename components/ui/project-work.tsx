@@ -1,9 +1,21 @@
-"use client"
-import Image from 'next/image';
+"use client";
+import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
-import profile from "../../assets/client-logo-two-4.png";
+import { portfolioData } from '../../assets/data/portfolioData'; // Adjust the path according to your file structure
 
-const ProjectItem = ({ title, category, image }) => {
+type Project = {
+  title: string;
+  category: 'All' | 'Fullstack' | 'Frontend' | 'Research';
+  image: StaticImageData;
+};
+
+type ProjectItemProps = {
+  title: string;
+  category: string;
+  image: StaticImageData;
+};
+
+const ProjectItem: React.FC<ProjectItemProps> = ({ title, category, image }) => {
   return (
     <div className="rounded-lg overflow-hidden shadow-lg bg-gray-800 dark:bg-gray-900 text-white">
       <Image src={image} alt={title} className="w-full h-48 object-cover" />
@@ -16,27 +28,9 @@ const ProjectItem = ({ title, category, image }) => {
 };
 
 export default function Projects() {
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState<'All' | 'Fullstack' | 'Frontend' | 'Research'>('All');
 
-  const projects = [
-    {
-      title: 'Mobile Application Design',
-      category: 'Design',
-      image: {profile},
-    },
-    {
-      title: 'Website Makeup Design',
-      category: 'Game',
-      image: {profile},
-    },
-    {
-      title: 'Brand Identity and Motion Design',
-      category: 'Branding',
-      image: {profile},
-    },
-  ];
-
-  const filteredProjects = filter === 'All' ? projects : projects.filter(project => project.category === filter);
+  const filteredProjects = filter === 'All' ? portfolioData : portfolioData.filter(project => project.category === filter);
 
   return (
     <section className="py-12 bg-gray-900 dark:bg-gray-900 text-white">
@@ -47,11 +41,11 @@ export default function Projects() {
         </p>
 
         <div className="flex justify-center space-x-4 mb-8">
-          {['All', 'Design', 'Game', 'Branding', 'Marketing'].map(category => (
+          {['All', 'Fullstack', 'Frontend', 'Research'].map(category => (
             <button
               key={category}
               className={`px-4 py-2 rounded-full ${filter === category ? 'bg-orange-500' : 'bg-gray-700 hover:bg-gray-600'}`}
-              onClick={() => setFilter(category)}
+              onClick={() => setFilter(category as 'All' | 'Fullstack' | 'Frontend' | 'Research')}
             >
               {category}
             </button>

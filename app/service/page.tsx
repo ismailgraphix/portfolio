@@ -4,6 +4,9 @@ export default function ServicesSection() {
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+      <p className="text-2xl font-light text-center text-gray-900 dark:text-white">
+          Services
+        </p>
         <h2 className="text-3xl font-extrabold text-center text-gray-900 dark:text-white">
           Quality Services
         </h2>
@@ -33,6 +36,7 @@ export default function ServicesSection() {
                 </svg>
               </div>
             </div>
+            
             <h3 className="text-lg font-medium text-gray-900 dark:text-white text-center">
               Brand Identity Design
             </h3>

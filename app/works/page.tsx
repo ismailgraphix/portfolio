@@ -1,7 +1,9 @@
+import Projects from "@/components/ui/project-work";
+
 const WorksPage = () => {
     return ( 
         <div>
-            <h1>my works</h1>
+            <Projects />
         </div>
      );
 }

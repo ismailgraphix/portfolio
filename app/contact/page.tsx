@@ -14,19 +14,19 @@ export default function Contact() {
             <div className="mb-6">
               <FaMapMarkerAlt className="text-orange-500 inline-block mr-2" />
               <span className="font-semibold">Our Office:</span>
-              <p className="ml-8">Jurain, Dhaka, Bangladesh</p>
+              <p className="ml-8">Abuja, Nigeria</p>
             </div>
 
             <div className="mb-6">
               <FaPhoneAlt className="text-orange-500 inline-block mr-2" />
               <span className="font-semibold">Contact Number:</span>
-              <p className="ml-8">+1234321321</p>
+              <p className="ml-8">+2349041262600</p>
             </div>
 
             <div>
               <FaEnvelope className="text-orange-500 inline-block mr-2" />
               <span className="font-semibold">Email Us:</span>
-              <p className="ml-8">websitename@mail.com</p>
+              <p className="ml-8">ismailgrapix@gmail.com</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
-                  placeholder="Steve Milner"
+                  placeholder="Ismail Muhammad"
                   className="w-full px-4 py-2 border rounded-lg bg-gray-900 border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
               </div>
@@ -48,7 +48,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
-                  placeholder="hello@websitename.com"
+                  placeholder="ismail.muhammad@bazeuniversity.edu.ng"
                   className="w-full px-4 py-2 border rounded-lg bg-gray-900 border-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500"
                 />
               </div>
