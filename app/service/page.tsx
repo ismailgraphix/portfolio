@@ -38,10 +38,10 @@ export default function ServicesSection() {
             </div>
             
             <h3 className="text-lg font-medium text-gray-900 dark:text-white text-center">
-              Brand Identity Design
+              Frontend Web development
             </h3>
             <p className="mt-2 text-gray-600 dark:text-gray-400 text-center">
-              Bentos gives you the blocks & kits you need to create a true website within minutes.
+              Ismail gives you the blocks & kits you need to create a true website within minutes.
             </p>
           </div>
           <div className="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg">
@@ -64,10 +64,10 @@ export default function ServicesSection() {
               </div>
             </div>
             <h3 className="text-lg font-medium text-gray-900 dark:text-white text-center">
-              Website Design
+              Fullstack Web development
             </h3>
             <p className="mt-2 text-gray-600 dark:text-gray-400 text-center">
-              Bentos gives you the blocks & kits you need to create a true website within minutes.
+              Ismail gives you the blocks & kits you need to create a true website within minutes.
             </p>
           </div>
           <div className="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-lg">
@@ -93,7 +93,7 @@ export default function ServicesSection() {
               Application Design
             </h3>
             <p className="mt-2 text-gray-600 dark:text-gray-400 text-center">
-              Bentos gives you the blocks & kits you need to create a true website within minutes.
+              Ismail gives you the blocks & kits you need to create a true website within minutes.
             </p>
           </div>
         </div>

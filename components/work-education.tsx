@@ -51,9 +51,9 @@ export default function WorkAndEducation() {
                 <FaRegCalendarAlt className="text-white w-6 h-6" />
               </div>
               <div>
-                <p className="text-sm text-gray-400">2013 - 2015</p>
-                <h3 className="text-lg font-semibold">Bachelor Degree of Information Technology</h3>
-                <p className="text-sm text-gray-500">State University Bangladesh</p>
+                <p className="text-sm text-gray-400">2028 - 2030</p>
+                <h3 className="text-lg font-semibold">Phd</h3>
+                <p className="text-sm text-gray-500">Massachusetts Institute of Technology</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -61,9 +61,9 @@ export default function WorkAndEducation() {
                 <FaRegCalendarAlt className="text-white w-6 h-6" />
               </div>
               <div>
-                <p className="text-sm text-gray-400">2021 - 2024</p>
-                <h3 className="text-lg font-semibold">Higher Secondary Education</h3>
-                <p className="text-sm text-gray-500">Premium College United VC</p>
+                <p className="text-sm text-gray-400">2026 - 2027</p>
+                <h3 className="text-lg font-semibold">Masters Degree in Computer Science</h3>
+                <p className="text-sm text-gray-500">Baze University, Abuja.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -71,9 +71,9 @@ export default function WorkAndEducation() {
                 <FaRegCalendarAlt className="text-white w-6 h-6" />
               </div>
               <div>
-                <p className="text-sm text-gray-400">2020 - 2021</p>
-                <h3 className="text-lg font-semibold">UI/UX Design</h3>
-                <p className="text-sm text-gray-500">Webster College</p>
+                <p className="text-sm text-gray-400">2025 - 2026</p>
+                <h3 className="text-lg font-semibold">Bachelor Degree in Computer Science</h3>
+                <p className="text-sm text-gray-500">Baze University, Abuja.</p>
               </div>
             </div>
           </div>

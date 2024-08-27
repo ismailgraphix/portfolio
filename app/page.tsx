@@ -19,7 +19,7 @@ export default function Profile() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Ismail Muhammad Adam</h2>
+            <h2 className="text-2xl font-bold mb-15">Ismail Muhammad Adam</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6">I am a Junior developer.</p>
           </div>
           <div className="flex space-x-4 justify-center">
@@ -36,13 +36,10 @@ export default function Profile() {
           <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 mb-6 h-full flex flex-col justify-between">
             <div>
               <p className="text-orange-500 dark:text-orange-400 mb-2">Hello There!</p>
-              <h1  className="text-3xl font-bold mb-4">
-                I&apos;m Ismail Muhammad Adam, a product designer crafting user-centric design with pixel-perfect precision.
-                a product designer crafting user-centric design with pixel-perfect precision.
-                a product designer crafting user-centric design with pixel-perfect precision.
-                a product designer crafting user-centric design with pixel-perfect precision.
-                a product designer crafting user-centric design with pixel-perfect precision.
-              </h1>
+              <h3  className="text-3xl mb-4 space-x-5">
+                I&apos;m Ismail, a passionate and innovative Junior Developer with a
+                 strong foundation in crafting seamless, user-focused digital experiences. 
+              </h3>
               <p className="flex items-center mb-4">
                 <span className="bg-green-500 w-3 h-3 rounded-full mr-2"></span>
                 Available for Freelancing
